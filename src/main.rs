@@ -1,25 +1,11 @@
 fn main() {
 
-    // addition
-    let _sum = 5 + 10;
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
 
-    // subtraction
-    let difference = 95.5 - 4.3;
+    let (x, y, z) = tup;
 
-    // multiplication
-    let product = 4 * 30;
-
-    // division
-    let quotient = 56.7 / 32.2;
-    let truncated = -5 / 3; // Results in -1
-
-    // remainder
-    let remainder = 43 % 5;
-
-    println!("The value of difference is: {difference}");
-    println!("The value of product is: {product}");
-    println!("The value of truncated is: {truncated}");
-    println!("The value of quotient is: {quotient}");
-    println!("The value of remainder is: {remainder}");
+    println!("The value of y is: {y}");
+    let x = tup.0;
+    println!("The value of x is: {x}")
 
 }
