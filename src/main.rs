@@ -1,9 +1,21 @@
-fn five() -> i32 {
-    5
-}
+fn main () {
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
 
-fn main() {
-    let x = five();
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
 
-    println!("The value of x is: {x}");
+        count += 1;
+    }
+    println!("End count = {count}");
 }
