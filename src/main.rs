@@ -1,11 +1,7 @@
 fn main() {
+    print_labeled_measurement(5, 'h');
+}
 
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-
-    let (x, y, z) = tup;
-
-    println!("The value of y is: {y}");
-    let x = tup.0;
-    println!("The value of x is: {x}")
-
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("The measurement is: {value}{unit_label}");
 }
