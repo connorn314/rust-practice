@@ -1,6 +1,11 @@
-fn main () {
-    let s1 = String::from("hello");
-    let s2 = s1.clone();
+fn main() {
+    let mut s = String::from("hello");
 
-    println!("s1 = {}, s2 = {}", s1, s2);
+    change(&mut s);
+
+    println!("{}", s)
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
 }
