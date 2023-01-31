@@ -1,5 +1,8 @@
 fn main() {
-    let v = vec![1, 2];
+    let s: String = String::from("abcdefghijklmnopqrstuvwxyz");
+    for char in s.bytes(){
+        println!("{char}")
+    }
 
     // let third: i32 = &v[2];
     // println!("The third element is {third}");
@@ -9,7 +12,7 @@ fn main() {
     //     Some(third) => println!("The third element is {third}"),
     //     None => println!("There is no third element."),
     // }
-    let mut v = vec![1, 2, 3, 4, 5];
+    let v = vec![1, 2, 3, 4, 5];
     let first = &v[0];
 
     // v.push(6);
